@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat&family=Great+Vibes&family=Ms+Madi&family=Smooch&display=swap');
+
+*{
+    border: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* roots */
+:root{
+    --cor-principal: #020024;
+    --cor-segunda: #230979;
+    --cor-terceira: #444488;
+    --cor-quarta: #db162f;
+}
+
+
+/* pagina 2 - curriculo */
+
+body{
+    background-color: var(--cor-principal);
+    font-family: 'Poppins';
+    color: aliceblue;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    align-items: center;
+    padding: 22px 160px;
+
+    background-color: var(--cor-principal);
+}
+
+header .logo{
+    font-size: 27px;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 200;
+}
+
+.front{
+    font-size: 30px;
+    color: var(--cor-quarta);
+    font-family: 'Caveat';
+    padding: 4px;
+    
+    text-decoration: none;
+}
+
+header .navbar{
+    list-style-type: none;
+    display: flex;
+}
+
+header .navbar a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 22px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+header .navbar a:hover{
+    border-bottom: 2px solid var(--cor-quarta);
+}
+
+
+/* *********************************** */
+/* conteudo */
+section{
+    padding: 70px 17%;
+}
+
+.home-projeto { 
+    display: inline-block;
+    width: 100%;
+    min-height: 95vh;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.home-projeto h1{
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 38px;
+    color: #db162f;
+    font-weight: 200;
+}
+
+.container{
+    margin-top: 5rem;
+}
+
+.home-projeto p{
+    font-size: 16px;
+    height: auto;
+    max-width: 50%;
+}

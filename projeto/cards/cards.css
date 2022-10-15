@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat&family=Great+Vibes&family=Ms+Madi&family=Smooch&display=swap');
+
+*{
+    border: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* roots */
+:root{
+    --cor-principal: #020024;
+    --cor-segunda: #230979;
+    --cor-terceira: #444488;
+    --cor-quarta: #db162f;
+}
+
+
+.container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 3rem 0;
+    padding: 2rem 4rem;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%;
+    height: 300px;
+    margin: 2rem 0 2rem 0;
+
+    border-radius: 4px;
+}
+
+.card{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin: 3rem 0 3rem 0 ;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #230979;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    cursor: pointer;
+}
+
+.card:hover{
+    background-color: #db162f;
+}
+
+.card-text{
+    width: 60%;
+    letter-spacing: 1px;
+}
+.card-text p{
+    max-width: 100%;
+    padding: 1px;
+}
+
+.card-wrapper{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.card-wrapper a{
+    margin-top: 10px;
+    max-width: 60%;
+    text-decoration: none;
+    color: aliceblue;
+    cursor: pointer;
+}
+

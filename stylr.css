@@ -1,0 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat&family=Great+Vibes&family=Ms+Madi&family=Smooch&display=swap');
+
+*{
+    border: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* roots */
+:root{
+    --cor-principal: #020024;
+    --cor-segunda: #230979;
+    --cor-terceira: #444488;
+    --cor-quarta: #db162f;
+}
+
+/* pagina inicial */
+
+body{
+    background-color: var(--cor-principal);
+    font-family: 'Poppins';
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    align-items: center;
+    padding: 30px 160px;
+
+    background-color: var(--cor-principal);
+}
+
+header .logo{
+    font-size: 27px;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 200;
+}
+
+.front{
+    font-size: 30px;
+    color: #db162f;
+    font-family: 'Caveat';
+    padding: 4px;
+    
+    text-decoration: none;
+}
+
+header .navbar{
+    list-style-type: none;
+    display: flex;
+}
+
+header .navbar a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 22px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+header .navbar a:hover{
+    border-bottom: 1px solid var(--cor-quarta);
+    transform: translate(0);
+    transition: all 0.5s;
+}
+
+#menu-icon{
+    font-size: 2.4rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* ..... */
+section{
+    padding: 70px 17%;
+}
+
+.home{
+    width: 100%;
+    min-height: 95vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 28rem;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.home-img img{
+    max-width: 100%;
+    width: 310px;
+    height: auto;
+    align-content: right;
+    border-radius: 50%;
+    border-top: 3px solid #230979;
+    /* border-bottom: 5px solid #444488; */
+}
+
+/* .home-img img:hover{
+
+    border-bottom: 10px solid #230979;
+    border-right: 9px solid #db162f;
+
+    transform: scale(1.1) translateY(10px);
+    transition: 2s;
+
+} */
+
+/* .home-text{
+    background-color: #db162f;
+} */
+
+.home-text h2{
+    font-size: 32px;
+    color: aliceblue;
+}
+
+.front2{
+    font-size: 30px;
+    color: #db162f;
+    font-family: 'Caveat';
+    font-weight: 200;
+    padding: 5px;
+}
+
+.home-text p{
+    color: aliceblue;
+    font-size: 18px;
+    margin: 1rem 0 2rem;
+}
+
+.btnLink{
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #230979;
+    border-radius: 2rem;
+    color: aliceblue;
+    width: 50px;
+    height: 50px;
+}
+
+.btnLink:hover{
+    transform: scale(1.1) translateX(10px);
+    transition: 1s;
+    background-color: #db162f;
+}

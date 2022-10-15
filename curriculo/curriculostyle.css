@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat&family=Great+Vibes&family=Ms+Madi&family=Smooch&display=swap');
+
+*{
+    border: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* roots */
+:root{
+    --cor-principal: #020024;
+    --cor-segunda: #230979;
+    --cor-terceira: #444488;
+    --cor-quarta: #db162f;
+}
+
+/* pagina 2 - curriculo */
+
+body{
+    background-color: var(--cor-terceira);
+    font-family: 'Poppins';
+    color: aliceblue;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    align-items: center;
+    padding: 30px 160px;
+
+    background-color: var(--cor-principal);
+}
+
+header .logo{
+    font-size: 27px;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 200;
+}
+
+.front{
+    font-size: 30px;
+    color: var(--cor-quarta);
+    font-family: 'Caveat';
+    padding: 4px;
+    
+    text-decoration: none;
+}
+
+header .navbar{
+    list-style-type: none;
+    display: flex;
+}
+
+header .navbar a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 22px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+header .navbar a:hover{
+    border-bottom: 2px solid var(--cor-quarta);
+}
+
+/* home - curriculo */
+.home-curriculo{
+    padding: 70px 17%;
+    width: 100%;
+    min-height: 95vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20rem;
+    align-items: center;
+}
+
+.main{
+    margin-top: 30%;
+    text-align: left;
+}
+
+.main2{
+    margin-top: 0.1rem;
+    text-align: left;
+}
+
+h1 a{
+    margin-top: 12px;
+    font-size: 32px;
+    text-decoration: none;
+    list-style-type: none;
+    color: #020024;
+}
+
+h2{
+    font-size: 28px;
+    border-bottom:  2px solid #020024;
+    width: 33%;
+}
+
+.line{
+    font-size: 28px;
+    border-bottom:  2px solid #020024;
+    width: 52%;
+}
+
+.ano{
+    color: #020024;
+}
+
+p{
+    margin: 1px;
+}
+
+.container{
+    padding: 12px;
+    left: 0;
+    text-align: left;
+}
+
+
+/* footer */
+.logo{
+    text-decoration: none;
+    list-style-type: none;
+    color: aliceblue;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+span{
+    padding: 0;
+}
+
+.home-img img{
+    width: 50px;
+}
+
+.footer-main{
+    background-color: #020024;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10rem;
+    padding: 28px;
+}
+
+.title-email{
+    color: #db162f;
+    font-weight: 400;
+}
+
+.email{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.title-social-media{
+    color: #db162f;
+    font-weight: 400;
+
+}
+
+h3{
+    font-size: 22px;
+}
+
+p{
+    padding: 4px;
+}
+
+
+.social-links li a{
+    text-decoration: none;
+}
+
+.btnLink{
+    color: aliceblue;
+    font-size: 15px; 
+    list-style-type: none;
+}

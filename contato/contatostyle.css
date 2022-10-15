@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat&family=Great+Vibes&family=Ms+Madi&family=Smooch&display=swap');
+
+*{
+    border: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* roots */
+:root{
+    --cor-principal: #020024;
+    --cor-segunda: #230979;
+    --cor-terceira: #444488;
+    --cor-quarta: #db162f;
+}
+
+
+body{
+    background-color: var(--cor-principal);
+    font-family: 'Poppins';
+    color: aliceblue;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    align-items: center;
+    padding: 30px 160px;
+
+    background-color: var(--cor-principal);
+}
+
+header .logo{
+    font-size: 27px;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 200;
+}
+
+.front{
+    font-size: 30px;
+    color: var(--cor-quarta);
+    font-family: 'Caveat';
+    padding: 4px;
+    
+    text-decoration: none;
+}
+
+header .navbar{
+    list-style-type: none;
+    display: flex;
+}
+
+header .navbar a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 22px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+header .navbar a:hover{
+    border-bottom: 2px solid var(--cor-quarta);
+}
+
+/* conteudo - contato */
+.home-contato{
+    display: flex;
+    margin-top: 8%;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #444488;
+    
+    height: 700px;
+}
+
+.main-container{
+    margin: 20px;
+    width: 20%;
+    height: auto;
+    padding: 20px;
+}
+
+.main-container h1{
+    font-size: 45px;
+}
+
+/* h1{
+    font-weight: bold;
+    color: #020024;
+} */
+
+.main-container p{
+    font-size: 22px;
+    margin-top: 6px;
+}
+
+.main-container h3{
+    margin-top: 28px;
+}
+
+.main-container h3.fone{
+    border-bottom: 2px solid #db162f;
+    width: 24%;
+    margin-top: 28px;
+}
+
+.main-container h3.mail{
+    border-bottom: 2px solid #db162f;
+    width: 18%;
+}
+
+/* formulario - enviar */
+form{
+    justify-content: space-evenly;
+    align-items: center;
+
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 1rem;
+
+    width: 100%;
+    height: 580px;
+    border-radius: 10px;
+
+    margin: 10px;
+    padding: 34px;
+}
+
+.input-container{
+    font-size: 18px;
+    padding: 2px;
+}
+
+input{
+    width: 100%;
+    height: 34px;
+    border-radius: 10px;
+    padding: 6px;
+    margin-top: 10px;
+}
+
+.input{
+    width: 100%;
+    height: 34px;
+    border-radius: 10px;
+    padding: 6px;
+    padding-left: 14px;
+}
+
+.btn{
+    justify-content: center;
+    align-items: center;
+
+    max-width: 50%;
+
+    cursor: pointer;
+    text-align: center;
+
+    background-color: #db162f;
+    font-weight: bold;
+    color: aliceblue;
+}
+.btn:hover{
+    background-color: aliceblue;
+    color: #db162f;
+    font-weight: bold;
+}
+
