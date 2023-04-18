@@ -54,17 +54,17 @@
     cursor: pointer;
 }
 
-.card:hover{
-    background-color: #db162f;
-}
 
 .card-text{
     width: 60%;
     letter-spacing: 1px;
 }
+
 .card-text p{
     max-width: 100%;
     padding: 1px;
+    font-weight: 100;
+    font-size: 14px;
 }
 
 .card-wrapper{
@@ -75,6 +75,7 @@
     align-items: center;
     position: relative;
 }
+
 .card-wrapper a{
     margin-top: 10px;
     max-width: 60%;
@@ -83,3 +84,7 @@
     cursor: pointer;
 }
 
+.card:hover{
+   border: 1px solid #db162f;
+   transition: all 2s;
+}

@@ -14,12 +14,13 @@
     --cor-segunda: #230979;
     --cor-terceira: #444488;
     --cor-quarta: #db162f;
+    --cor-quinta: #e1e4e7;
 }
 
 /* pagina 2 - curriculo */
 
 body{
-    background-color: var(--cor-terceira);
+    background: linear-gradient(45deg, #230979, #020024);
     font-family: 'Poppins';
     color: aliceblue;
 }
@@ -27,15 +28,14 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    position: fixed;
+    position: relative;
     width: 100%;
     right: 0;
     top: 0;
     z-index: 1000;
     align-items: center;
-    padding: 30px 160px;
-
-    background-color: var(--cor-principal);
+    padding: 15px 100px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 header .logo{
@@ -50,7 +50,6 @@ header .logo{
     color: var(--cor-quarta);
     font-family: 'Caveat';
     padding: 4px;
-    
     text-decoration: none;
 }
 
@@ -62,7 +61,7 @@ header .navbar{
 header .navbar a{
     text-decoration: none;
     color: aliceblue;
-    font-size: 22px;
+    font-size: 18px;
     padding: 10px 20px;
     cursor: pointer;
 }
@@ -70,6 +69,8 @@ header .navbar a{
 header .navbar a:hover{
     border-bottom: 2px solid var(--cor-quarta);
 }
+
+
 
 /* home - curriculo */
 .home-curriculo{
@@ -80,6 +81,12 @@ header .navbar a:hover{
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20rem;
     align-items: center;
+}
+
+.download{
+    font-size: 13px;
+    font-weight: 100;
+    color: #c7ccd0;
 }
 
 .main{
@@ -97,13 +104,19 @@ h1 a{
     font-size: 32px;
     text-decoration: none;
     list-style-type: none;
-    color: #020024;
+    color: var(--cor-quinta);
 }
 
 h2{
     font-size: 28px;
-    border-bottom:  2px solid #020024;
+    border-bottom:  2px solid #db162f;
     width: 33%;
+    color: aliceblue;
+}
+
+h3{
+    color: #c7ccd0;
+    font-size: 22px;
 }
 
 .line{
@@ -113,21 +126,20 @@ h2{
 }
 
 .ano{
-    color: #020024;
+    color: var(--cor-quarta);
 }
 
 p{
     margin: 1px;
+    padding: 4px;
 }
 
 .container{
-    padding: 12px;
+    padding: 22px;
     left: 0;
     text-align: left;
 }
 
-
-/* footer */
 .logo{
     text-decoration: none;
     list-style-type: none;
@@ -142,48 +154,4 @@ span{
 
 .home-img img{
     width: 50px;
-}
-
-.footer-main{
-    background-color: #020024;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10rem;
-    padding: 28px;
-}
-
-.title-email{
-    color: #db162f;
-    font-weight: 400;
-}
-
-.email{
-    color: aliceblue;
-    text-decoration: none;
-}
-
-.title-social-media{
-    color: #db162f;
-    font-weight: 400;
-
-}
-
-h3{
-    font-size: 22px;
-}
-
-p{
-    padding: 4px;
-}
-
-
-.social-links li a{
-    text-decoration: none;
-}
-
-.btnLink{
-    color: aliceblue;
-    font-size: 15px; 
-    list-style-type: none;
 }

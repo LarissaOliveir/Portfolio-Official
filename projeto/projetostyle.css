@@ -5,6 +5,8 @@
     border: 0;
     box-sizing: border-box;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
 }
 
 /* roots */
@@ -19,7 +21,7 @@
 /* pagina 2 - curriculo */
 
 body{
-    background-color: var(--cor-principal);
+    background: linear-gradient(45deg, #020024, #230979);
     font-family: 'Poppins';
     color: aliceblue;
 }
@@ -27,15 +29,14 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    position: fixed;
+    position: relative;
     width: 100%;
     right: 0;
     top: 0;
     z-index: 1000;
     align-items: center;
-    padding: 22px 160px;
-
-    background-color: var(--cor-principal);
+    padding: 15px 100px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 header .logo{
@@ -50,7 +51,6 @@ header .logo{
     color: var(--cor-quarta);
     font-family: 'Caveat';
     padding: 4px;
-    
     text-decoration: none;
 }
 
@@ -62,13 +62,13 @@ header .navbar{
 header .navbar a{
     text-decoration: none;
     color: aliceblue;
-    font-size: 22px;
+    font-size: 18px;
     padding: 10px 20px;
     cursor: pointer;
 }
 
 header .navbar a:hover{
-    border-bottom: 2px solid var(--cor-quarta);
+    border-bottom: 1px solid var(--cor-quarta);
 }
 
 
@@ -88,7 +88,7 @@ section{
 
 .home-projeto h1{
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 1rem;
     font-size: 38px;
     color: #db162f;
     font-weight: 200;

@@ -18,7 +18,7 @@
 
 
 body{
-    background-color: var(--cor-principal);
+    background: linear-gradient(45deg, #020024, #230979);
     font-family: 'Poppins';
     color: aliceblue;
 }
@@ -32,9 +32,8 @@ header{
     top: 0;
     z-index: 1000;
     align-items: center;
-    padding: 30px 160px;
-
-    background-color: var(--cor-principal);
+    padding: 15px 100px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 header .logo{
