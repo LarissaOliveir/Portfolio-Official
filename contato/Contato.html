@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="/contato/contatostyle.css">
     <title>Contato</title>
 </head>
+
 <body>
-    
-     <!-- nav -->
-     <header>
-        <a href="/index.html" class="logo"> Larissa Ramos 
+
+    <!-- nav -->
+    <header>
+        <a href="/index.html" class="logo"> Larissa Ramos
             <spam class="front">
                 Dev Front-End
-            </spam> 
+            </spam>
         </a>
 
         <div class="bx bx-menu" id="menu-icon"></div>
 
         <ul class="navbar">
-            <li> <a href="/index.html" target="_self" > Home </a> </li>
-            <li> <a  href="/curriculo/Curriculo.html" target="_self" > Curriculo </a> </li>
-            <li> <a  href="/projeto/Projetos.html" target="_self" > Projetos </a> </li>
+            <li> <a href="/index.html" target="_self"> Home </a> </li>
+            <li> <a href="/curriculo/Curriculo.html" target="_self"> Curriculo </a> </li>
+            <li> <a href="/projeto/Projetos.html" target="_self"> Projetos </a> </li>
         </ul>
     </header>
 
     <section class="home-contato">
-    
+
         <div class="main-container">
 
             <h1>Contato</h1>
@@ -42,41 +44,38 @@
 
         </div>
 
-        <div class="contact-form" >
+        <div class="contact-form">
 
-           <form action="/index.html" autocomplete="off">
+            <form action="/index.html" autocomplete="off">
 
                 <div class="input-container focus">
                     <label>Nome</label>
-                    <input type="text" name="name" placeholder="Digite seu nome" class="input">
-                    
+                    <input class="name" type="text" name="name" placeholder="Digite seu nome">
                 </div>
 
                 <div class="input-container focus">
                     <label>Sobrenome</label>
-                    <input type="text" name="name" placeholder="Digite seu sobrenome" class="input">
-                    
+                    <input class="lastname" type="text" name="name" placeholder="Digite seu sobrenome">
                 </div>
 
                 <div class="input-container focus">
                     <label>Email</label>
-                    <input type="email" name="email" placeholder="Digite seu email" >
-                    
+                    <input class="email" type="email" name="email" placeholder="Digite seu email">
                 </div>
 
                 <div class="input-container focus">
                     <label>Menssagem</label>
-                    <input type="text" name="message"  placeholder="Digite a mensagem"  style="height: 110px; ">
-                    
+                    <input class="mensage" type="text" name="message" placeholder="Digite a mensagem" maxlength="255">
                 </div>
 
                 <input type="submit" value="Enviar" class="btn">
 
-           </form>
+            </form>
 
         </div>
 
     </section>
 
 </body>
+
 </html>

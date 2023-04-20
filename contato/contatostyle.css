@@ -14,11 +14,12 @@
     --cor-segunda: #230979;
     --cor-terceira: #444488;
     --cor-quarta: #db162f;
+    --cor-quinta: #e1e4e7;
 }
 
 
 body {
-    background: linear-gradient(45deg, #020024, #230979);
+    background: var(--cor-quinta);
     font-family: 'Poppins';
     color: aliceblue;
 }
@@ -34,6 +35,7 @@ header {
     align-items: center;
     padding: 15px 100px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(45deg, #020024, #230979);
 }
 
 header .logo {
@@ -87,6 +89,7 @@ header .navbar a:hover {
 
 .main-container h1 {
     font-size: 45px;
+    color: #020024;
 }
 
 .main-container p {
@@ -102,14 +105,29 @@ header .navbar a:hover {
     border-bottom: 2px solid #db162f;
     width: 24%;
     margin-top: 28px;
+    color: #444488;
 }
 
 .main-container h3.mail {
     border-bottom: 2px solid #db162f;
     width: 18%;
+    color: #444488;
 }
 
+
+
 /* formulario - enviar */
+.contact-form {
+    background: linear-gradient(45deg, #020024, #230979);
+    /* width: 450px; */
+    max-width: 100%;
+    border-radius: 14px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 form {
     justify-content: space-evenly;
     align-items: center;
@@ -122,8 +140,12 @@ form {
     height: 580px;
     border-radius: 10px;
 
-    margin: 10px;
+    margin: 30px;
     padding: 34px;
+}
+
+label {
+    font-size: 16px;
 }
 
 .input-container {
@@ -134,35 +156,21 @@ form {
 input {
     width: 100%;
     height: 34px;
-    border-radius: 10px;
-    padding: 6px;
     margin-top: 10px;
-}
-
-.input {
-    width: 100%;
-    height: 34px;
-    border-radius: 10px;
-    padding: 6px;
-    padding-left: 14px;
+    border-radius: 5px;
+    padding: 14px;
 }
 
 .btn {
-    justify-content: center;
-    align-items: center;
-
-    max-width: 50%;
-
+    max-width: 100%;
     cursor: pointer;
-    text-align: center;
-
+    border-radius: 5px;
     background-color: #db162f;
     font-weight: bold;
     color: aliceblue;
 }
 
 .btn:hover {
-    background-color: aliceblue;
-    color: #db162f;
+    border: 1px solid #e1e4e7;
     font-weight: bold;
 }
